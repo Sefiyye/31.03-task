@@ -6,15 +6,24 @@ namespace ConsoleApp34
     {
         static void Main(string[] args)
         {
-            Bycle bycle = new Bycle("Qara", "Cervelo", 1);
-            Car car = new Car(5, 5, 1, "Boz", "Acura", 200);
-
-            foreach (var item in bycle
+            bool Search = true;
+            while (Search)
             {
-              
-            }
-            {
+                Console.WriteLine("1.Maşınları millage - e göre filtirlə");
+                Console.WriteLine("2.Butun masinlari goster");
+                Console.WriteLine("3. Prosesi bitir");
 
+                string answer = Console.ReadLine();
+
+                if(answer=="3")
+                {
+                    Search = false;
+                    Console.WriteLine("Prosesi bitir.");
+                }
+                else
+                {
+                    Console.WriteLine("Zehmet olmasa duzgun secim edin");
+                }
             }
         }
     }
